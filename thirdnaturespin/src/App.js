@@ -211,7 +211,7 @@ function Q4({set_curPageNum}){
     <div className="QuestionBox">
       <div className="QuestionHeader">
         <br></br>
-        We currently lack reliable business partners that provide loans with low enough interest rates. The last banks charged interest rates that were too high for us to use.
+        Marlene: We currently lack reliable business partners that provide loans with low enough interest rates. The last banks charged interest rates that were too high for us to use.
         <br></br>
         <br></br>
       </div>
@@ -240,10 +240,246 @@ function Q5({set_curPageNum}){
     set_curPageNum(-1);
   }
 
-
+  return (
+    <div className="QuestionBox">
+      <div className="QuestionHeader">
+        <br></br>
+        Marlene: Our company will miss out on opportunities, meaning that we cannot expand and potentially go bankrupt.
+        <br></br>
+        <br></br>
+      </div>
+      <div className="Question">
+        <br></br>
+        What do you say next?
+        <br></br>
+        <br></br>
+      </div>
+      <div className="AnswerSection">      
+        <button onClick={clickedWrongOption}>Do you have evidence to back up your claim?</button>
+        <button onClick={clickedWrongOption}>I'm sorry but I cannot trust this company for this loan, considering that your company is close to bankruptcy.</button>
+        <button onClick={clickedWrongOption}>That's unfortunate!</button>
+        <button onClick={clickedCorrectOption}>This office building must be very important.</button>
+      </div>
+    </div>
+  );
 }
 
-/*On Q5
+function Q6({set_curPageNum}){
+  function clickedCorrectOption(){
+    set_curPageNum(7);
+  }
+
+  function clickedWrongOption(){
+    set_curPageNum(-1);
+  }
+
+  return (
+    <div className="QuestionBox">
+      <div className="QuestionHeader">
+        <br></br>
+        Marlene: Yes it is
+        <br></br>
+        <br></br>
+      </div>
+      <div className="Question">
+        <br></br>
+        What do you say next?
+        <br></br>
+        <br></br>
+      </div>
+      <div className="AnswerSection">      
+        <button onClick={clickedWrongOption}>I bet it is.</button>
+        <button onClick={clickedWrongOption}>Well, I am able to offer you a loan of $3 million.</button>
+        <button onClick={clickedCorrectOption}>What will you need in order for the building of this new office building to be successful?</button>
+        <button onClick={clickedWrongOption}>*Recap what we went over and hang up*</button>
+      </div>
+    </div>
+  );
+}
+
+function Q7({set_curPageNum}){
+  function clickedCorrectOption(){
+    set_curPageNum(8);
+  }
+
+  function clickedWrongOption(){
+    set_curPageNum(-1);
+  }
+
+  return (
+    <div className="QuestionBox">
+      <div className="QuestionHeader">
+        <br></br>
+        Marlene: I will need a loan of $3 million.
+        <br></br>
+        <br></br>
+      </div>
+      <div className="Question">
+        <br></br>
+        What do you say next?
+        <br></br>
+        <br></br>
+      </div>
+      <div className="AnswerSection">      
+        <button onClick={clickedWrongOption}>We can give you a $3 million loan. What interest rate would work for you.</button>
+        <button onClick={clickedCorrectOption}>We can think of a solution that could meet your needs. Could we have another meeting?</button>
+        <button onClick={clickedWrongOption}>Well, we can give this $3 million loan with a 3% interest rate.</button>
+        <button onClick={clickedWrongOption}>*Recap what we went over and end the call*</button>
+      </div>
+    </div>
+  );
+}
+
+function Q8({set_curPageNum}){
+  function clickedCorrectOption(){
+    set_curPageNum(9);
+  }
+
+  function clickedWrongOption(){
+    set_curPageNum(-1);
+  }
+
+  return (
+    <div className="QuestionBox">
+      <div className="QuestionHeader">
+        <br></br>
+        Marlene: Of course!
+        <br></br>
+        <br></br>
+      </div>
+      <div className="Question">
+        <br></br>
+        What do you say next?
+        <br></br>
+        <br></br>
+      </div>
+      <div className="AnswerSection">      
+        <button onClick={clickedWrongOption}>I think we can offer a loan of $3 million.</button>
+        <button onClick={clickedWrongOption}>Would you like to have a meeting on Thursday?</button>
+        <button onClick={clickedCorrectOption}>*Recap what we just did*</button>
+        <button onClick={clickedWrongOption}>*Recap what we just did and hang up*</button>
+      </div>
+    </div>
+  );
+}
+
+function Q9({set_curPageNum}){
+  function clickedCorrectOption(){
+    set_curPageNum(10);
+  }
+
+  function clickedWrongOption(){
+    set_curPageNum(-1);
+  }
+
+  return (
+    <div className="QuestionBox">
+      <div className="QuestionHeader">
+        <br></br>
+        You: For our next meetting...
+        <br></br>
+        <br></br>
+      </div>
+      <div className="Question">
+        <br></br>
+        What do you say next?
+        <br></br>
+        <br></br>
+      </div>
+      <div className="AnswerSection">      
+        <button onClick={clickedWrongOption}>Does tomorrow work?</button>
+        <button onClick={clickedWrongOption}>Does 2pm on Saturday work?</button>
+        <button onClick={clickedCorrectOption}>Does 3pm on Wednesday work?</button>
+        <button onClick={clickedWrongOption}>Does 10pm on Thursday work?</button>
+      </div>
+    </div>
+  );
+}
+
+function Q10({set_curPageNum}){
+  function clickedCorrectOption(){
+    set_curPageNum(11);
+  }
+
+  function clickedWrongOption(){
+    set_curPageNum(-1);
+  }
+
+  return (
+    <div className="QuestionBox">
+      <div className="QuestionHeader">
+        <br></br>
+        Marlene: I will not be able to do Wednesday.
+        <br></br>
+        <br></br>
+      </div>
+      <div className="Question">
+        <br></br>
+        What do you say next?
+        <br></br>
+        <br></br>
+      </div>
+      <div className="AnswerSection">      
+        <button onClick={clickedCorrectOption}>How about 2pm on Thursday?</button>
+        <button onClick={clickedWrongOption}>Does 2pm on Saturday work?</button>
+        <button onClick={clickedWrongOption}>I'll talk to my supervisors and find a good day to do.</button>
+        <button onClick={clickedWrongOption}>That's really the only day I can do.</button>
+      </div>
+    </div>
+  );
+}
+
+function ProceedToCertificate({set_curPageNum}){
+  function ClickedOnProceedButton(){
+    set_curPageNum(12);
+  }
+
+  return (
+    <div className="QuestionBox">
+      <div className="QuestionHeader">
+        <br></br>
+        Marlene: Well, thank you for the meeting!
+        You: You too! Have a great day!
+        Marlene: Have a great day
+        *Call ends*
+        <br></br>
+        <br></br>
+      </div>
+      <div className="Question">
+        <br></br>
+        Congratulations! You completed the roleplay!
+        <br></br>
+        <br></br>
+      </div>
+      <div className="AnswerSection">      
+        <button onClick={ClickedOnProceedButton}>Proceed to the Certificate!</button>
+      </div>
+    </div>
+  );
+}
+
+function Certificate({studentName, cougarnetID}){
+  return(
+    <div className="QuestionBox">
+      <div className="QuestionHeader">
+        Certificate fo Completion
+      </div>
+      <div className="Question">
+        <br></br>
+        I COMPLETED THE SPIN ROLEPLAY!!!
+        <br></br>
+        <br></br>
+        Name: {studentName}
+        <br></br>
+        CougarNet ID: {cougarnetID}
+        <br></br>
+        <br></br>
+      </div>
+    </div>
+  );
+}
+  
+/*On Q8
 Q3: You can see above 
   Response: We currently lack reliable business partners that provide loans with low enough interest rates. The last banks charged interest rates that were too high for us to use.
 Q4 Answer: What would happen if you are unable to successfully build the office?
@@ -257,14 +493,36 @@ Q5 Answer: This office building must be very important
     Do you have evidence to back up your claim?
     I'm sorry but I cannot trust this company for this loan.
     That's unfortunate!
+  Response: Yes it is
 Q6: What will you need in order for the building of this new office building to be successful?
+  Wrong Answers:
+    I bet it is
+    Well, I am able to offer you a loan of $3 million.
+    *Recap what we went over and hang up*
+  Response: I will need a loan of $3 million.
 Q7: We have some solutions that could meet your needs. Could we have another meeting?
+  Wrong Answers:
+    We can give you a $3 million loan. What interest rate would work for you.
+    Well, we can give this $3 million loan with a 3% interest rate.
+    *Recap what we did and end the call*
   Response: Of course!
-Q8: Does 3pm on Wednesday work?
+Q8: *Recap what we just did*
+  Wrong Answers:
+    I think we can offer a loan of $3 million.
+    Would you like to have a meeting on Thursday?
+    *Recap what we just did and hang up*
+Q9: Does 3pm on Wednesday work?
+  Wrong Answers:
+    Does tomorrow work?
+    Does 2pm on Saturday work?
+    Does 10pm on Thursday work?
   Response: I will not be able to do Wednesday
-Q9: How about 2pm on Thursday?
+Q10: How about 2pm on Thursday?
+  Wrong Answers:
+    How about 2pm on Saturday?
+    I'll talk to my supervisors and find a good day to do.
+    That's really the only day I can do.
   Response: That works
-Q10: *Recap what we just did*
 */
 
 function Main(){
@@ -281,10 +539,16 @@ function Main(){
       {curPageNum == 2 && <Q2 set_curPageNum={set_curPageNum}/>}
       {curPageNum == 3 && <Q3 set_curPageNum={set_curPageNum}/>}
       {curPageNum == 4 && <Q4 set_curPageNum={set_curPageNum}/>}
+      {curPageNum == 5 && <Q5 set_curPageNum={set_curPageNum}/>}
+      {curPageNum == 6 && <Q6 set_curPageNum={set_curPageNum}/>}
+      {curPageNum == 7 && <Q7 set_curPageNum={set_curPageNum}/>}
+      {curPageNum == 8 && <Q8 set_curPageNum={set_curPageNum}/>}
+      {curPageNum == 9 && <Q9 set_curPageNum={set_curPageNum}/>}
+      {curPageNum == 10 && <Q10 set_curPageNum={set_curPageNum}/>}
+      {curPageNum == 11 && <ProceedToCertificate set_curPageNum={set_curPageNum}/>}
+      {curPageNum == 12 && <Certificate studentName={studentName} cougarnetID={cougarnetID}/>}
     </body>
   );
 }
-
-//{g == 0 && <enterInformation/>}
 
 export default Main;
